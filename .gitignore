@@ -46,6 +46,9 @@ app.*.map.json
 
 training_data
 
+# Environment variables
+.env
+
 note1.txt
 note2.txt
 note3.txt
