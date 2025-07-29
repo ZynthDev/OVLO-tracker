@@ -73,6 +73,7 @@ class DataExportPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 50,),
+
               Padding(
                 padding: EdgeInsets.all(10),
                 child: Column(
