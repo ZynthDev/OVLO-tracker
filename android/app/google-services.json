@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "160295799677",
+    "project_id": "zynth-ovlo-tracker",
+    "storage_bucket": "zynth-ovlo-tracker.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160295799677:android:64a5591f6a177529685a14",
+        "android_client_info": {
+          "package_name": "com.zynth.ovlotracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160295799677-go30qkjqgl3rths273mre76vl0ecp6uk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD74oNqK65wbBivan7bL44czv0bfNwE_II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160295799677-go30qkjqgl3rths273mre76vl0ecp6uk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
