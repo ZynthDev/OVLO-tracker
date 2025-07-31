@@ -192,7 +192,6 @@ class SettingsPage extends StatelessWidget {
                                           ),
                                         ),
                                       ),
-
                                       SettingsCard(settings: AppConstants.accountSettings, title: "Account",),
                                       // SettingsCard(settings: AppConstants.appearanceSettings, title: "Appearance",),
                                       // SettingsCard(settings: AppConstants.notificationsSettings, title: "Notifications",),

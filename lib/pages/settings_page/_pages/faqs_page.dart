@@ -34,152 +34,152 @@ class _FaqsPageState extends State<FaqsPage> {
                         child: Row(
                           children: [
                             InkWell(
-                                borderRadius: BorderRadius.circular(100),
-                                onTap: () => Navigator.pop(context),
-                                child: Icon(Icons.chevron_left, size: 27,)
+                              borderRadius: BorderRadius.circular(100),
+                              onTap: () => Navigator.pop(context),
+                              child: Icon(Icons.chevron_left, size: 27,)
                             ),
                             SizedBox(width: 15,),
                             Text("Help Center", style: TextStyle(
-                                fontSize: 16
+                              fontSize: 16
                             ))
                           ],
                         ),
                       ),
                       SizedBox(height: 20,),
                       SizedBox(
-                          width: double.infinity,
-                          child: Text("FAQs and support articles", style: TextStyle(
-                              fontSize: 16,
-                              color: HexColor.fromHex("#666666").withValues(alpha: 0.82)
-                          ),textAlign: TextAlign.center,)
+                        width: double.infinity,
+                        child: Text("FAQs and support articles", style: TextStyle(
+                          fontSize: 16,
+                          color: HexColor.fromHex("#666666").withValues(alpha: 0.82)
+                        ),textAlign: TextAlign.center,)
                       ),
                       SizedBox(height: 20,),
                       
-                      Container(
-                        width: double.infinity,
-                        margin: const EdgeInsets.symmetric(horizontal: 16),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(15),
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withAlpha(40),
-                                blurRadius: 8,
-                                offset: const Offset(0, 3),
-                              ),
-                            ],
-                            border: Border.all(
-                                color: Colors.black.withValues(alpha: 0.07)
-                            )
-                        ),
-                        child: Container(
-                          height: 110,
-                          decoration: BoxDecoration(
-                              color: HexColor.fromHex("#6B21A8").withValues(alpha: 0.02),
-                              borderRadius: BorderRadius.circular(15),
-                              border: Border.all(
-                                  color: Colors.black.withValues(alpha: 0.07)
-                              )
-                          ),
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
-                            child: Column(
-                              children: [
-                                Spacer(),
-                                TextField(
-                                  decoration: InputDecoration(
-                                    hintText: "Search for help...",
-                                    hintStyle: TextStyle(
-                                        color: Colors.black.withValues(alpha: 0.44)
-                                    ),
-                                    contentPadding: EdgeInsets.symmetric(vertical: 7, horizontal: 16),
-                                    isDense: true,
-                                    prefixIcon: Icon(Icons.search, color: Colors.black.withValues(alpha: 0.6), size: 28,),
-                                    filled: true,
-                                    fillColor: HexColor.fromHex("#D9D9D9").withValues(alpha: 0.27),
-                                    border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(100),
-                                    ),
-                                    enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(100),
-                                      borderSide: BorderSide(color: Colors.black.withValues(alpha: 0.7)),
-                                    ),
-                                    focusedBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(100),
-                                      borderSide: BorderSide(color: Colors.black.withValues(alpha: 0.7)),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                      SizedBox(height: 10,),
-                      Container(
-                        width: double.infinity,
-                        margin: const EdgeInsets.symmetric(horizontal: 16),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            color: Colors.white,
-                            boxShadow: [
-                              BoxShadow(
-                                color: Colors.black.withAlpha(40),
-                                blurRadius: 8,
-                                offset: const Offset(0, 3),
-                              ),
-                            ],
-                            border: Border.all(
-                                color: Colors.black.withValues(alpha: 0.07)
-                            )
-                        ),
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(12),
-                            color: HexColor.fromHex("#6B21A8").withValues(alpha: 0.02),
-                          ),
-                          child: Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24.0),
-                            decoration: BoxDecoration(
-                              color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text("Need Help?", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                                const SizedBox(height: 12),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                  children: [
-                                    HelpButton(
-                                      icon: SvgPicture.asset('assets/icons/icon_bubble_chat.svg'),
-                                      label: "Live Chat",
-                                      bgColor: HexColor.fromHex("#DFC2FE").withValues(alpha: 0.32),
-                                      textColor: HexColor.fromHex(AppConstants.primaryText),
-                                      strokeColor: Colors.black.withValues(alpha: 0.07),
-                                    ),
-                                    HelpButton(
-                                      icon: SvgPicture.asset('assets/icons/icon_email.svg'),
-                                      label: "Email Us",
-                                      bgColor: HexColor.fromHex("#C8FFE3").withValues(alpha: 0.32),
-                                      textColor: HexColor.fromHex("#01813E"),
-                                      strokeColor: HexColor.fromHex("#C8FFE3"),
-                                    ),
-                                    HelpButton(
-                                      icon: SvgPicture.asset('assets/icons/icon_phone.svg'),
-                                      label: "Call",
-                                      bgColor: HexColor.fromHex("#F884A5").withValues(alpha: 0.32),
-                                      textColor: HexColor.fromHex("#9E3452"),
-                                      strokeColor: Colors.black.withValues(alpha: 0.07),
-                                    ),
-                                  ],
-                                )
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
+                      // Container(
+                      //   width: double.infinity,
+                      //   margin: const EdgeInsets.symmetric(horizontal: 16),
+                      //   decoration: BoxDecoration(
+                      //     borderRadius: BorderRadius.circular(15),
+                      //     color: Colors.white,
+                      //     boxShadow: [
+                      //       BoxShadow(
+                      //         color: Colors.black.withAlpha(40),
+                      //         blurRadius: 8,
+                      //         offset: const Offset(0, 3),
+                      //       ),
+                      //     ],
+                      //     border: Border.all(
+                      //       color: Colors.black.withValues(alpha: 0.07)
+                      //     )
+                      //   ),
+                      //   child: Container(
+                      //     height: 110,
+                      //     decoration: BoxDecoration(
+                      //       color: HexColor.fromHex("#6B21A8").withValues(alpha: 0.02),
+                      //       borderRadius: BorderRadius.circular(15),
+                      //       border: Border.all(
+                      //         color: Colors.black.withValues(alpha: 0.07)
+                      //       )
+                      //     ),
+                      //     child: Padding(
+                      //       padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
+                      //       child: Column(
+                      //         children: [
+                      //           Spacer(),
+                      //           TextField(
+                      //             decoration: InputDecoration(
+                      //               hintText: "Search for help...",
+                      //               hintStyle: TextStyle(
+                      //                 color: Colors.black.withValues(alpha: 0.44)
+                      //               ),
+                      //               contentPadding: EdgeInsets.symmetric(vertical: 7, horizontal: 16),
+                      //               isDense: true,
+                      //               prefixIcon: Icon(Icons.search, color: Colors.black.withValues(alpha: 0.6), size: 28,),
+                      //               filled: true,
+                      //               fillColor: HexColor.fromHex("#D9D9D9").withValues(alpha: 0.27),
+                      //               border: OutlineInputBorder(
+                      //                 borderRadius: BorderRadius.circular(100),
+                      //               ),
+                      //               enabledBorder: OutlineInputBorder(
+                      //                 borderRadius: BorderRadius.circular(100),
+                      //                 borderSide: BorderSide(color: Colors.black.withValues(alpha: 0.7)),
+                      //               ),
+                      //               focusedBorder: OutlineInputBorder(
+                      //                 borderRadius: BorderRadius.circular(100),
+                      //                 borderSide: BorderSide(color: Colors.black.withValues(alpha: 0.7)),
+                      //               ),
+                      //             ),
+                      //           ),
+                      //         ],
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
+                      // SizedBox(height: 10,),
+                      // Container(
+                      //   width: double.infinity,
+                      //   margin: const EdgeInsets.symmetric(horizontal: 16),
+                      //   decoration: BoxDecoration(
+                      //     borderRadius: BorderRadius.circular(12),
+                      //     color: Colors.white,
+                      //     boxShadow: [
+                      //       BoxShadow(
+                      //         color: Colors.black.withAlpha(40),
+                      //         blurRadius: 8,
+                      //         offset: const Offset(0, 3),
+                      //       ),
+                      //     ],
+                      //     border: Border.all(
+                      //       color: Colors.black.withValues(alpha: 0.07)
+                      //     )
+                      //   ),
+                      //   child: Container(
+                      //     decoration: BoxDecoration(
+                      //       borderRadius: BorderRadius.circular(12),
+                      //       color: HexColor.fromHex("#6B21A8").withValues(alpha: 0.02),
+                      //     ),
+                      //     child: Container(
+                      //       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24.0),
+                      //       decoration: BoxDecoration(
+                      //         color: Colors.transparent,
+                      //         borderRadius: BorderRadius.circular(12),
+                      //       ),
+                      //       child: Column(
+                      //         crossAxisAlignment: CrossAxisAlignment.start,
+                      //         children: [
+                      //           const Text("Need Help?", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
+                      //           const SizedBox(height: 12),
+                      //           Row(
+                      //             mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      //             children: [
+                      //               HelpButton(
+                      //                 icon: SvgPicture.asset('assets/icons/icon_bubble_chat.svg'),
+                      //                 label: "Live Chat",
+                      //                 bgColor: HexColor.fromHex("#DFC2FE").withValues(alpha: 0.32),
+                      //                 textColor: HexColor.fromHex(AppConstants.primaryText),
+                      //                 strokeColor: Colors.black.withValues(alpha: 0.07),
+                      //               ),
+                      //               HelpButton(
+                      //                 icon: SvgPicture.asset('assets/icons/icon_email.svg'),
+                      //                 label: "Email Us",
+                      //                 bgColor: HexColor.fromHex("#C8FFE3").withValues(alpha: 0.32),
+                      //                 textColor: HexColor.fromHex("#01813E"),
+                      //                 strokeColor: HexColor.fromHex("#C8FFE3"),
+                      //               ),
+                      //               HelpButton(
+                      //                 icon: SvgPicture.asset('assets/icons/icon_phone.svg'),
+                      //                 label: "Call",
+                      //                 bgColor: HexColor.fromHex("#F884A5").withValues(alpha: 0.32),
+                      //                 textColor: HexColor.fromHex("#9E3452"),
+                      //                 strokeColor: Colors.black.withValues(alpha: 0.07),
+                      //               ),
+                      //             ],
+                      //           )
+                      //         ],
+                      //       ),
+                      //     ),
+                      //   ),
+                      // ),
                       SizedBox(height: 10,),
                       Container(
                         width: double.infinity,
@@ -188,7 +188,7 @@ class _FaqsPageState extends State<FaqsPage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                              color: Colors.black.withValues(alpha: 0.07)
+                            color: Colors.black.withValues(alpha: 0.07)
                           ),
                           boxShadow: [
                             BoxShadow(
@@ -208,9 +208,9 @@ class _FaqsPageState extends State<FaqsPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text("Frequently Asked Questions", style: TextStyle(
-                                  fontWeight: FontWeight.w500,
-                                  fontSize: 18,
-                                  color: Colors.black.withValues(alpha: 0.9)
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                color: Colors.black.withValues(alpha: 0.9)
                               )),
                               const SizedBox(height: 12),
                               ...AppConstants.faqs.map((faq) => Container(
@@ -264,7 +264,7 @@ class _FaqsPageState extends State<FaqsPage> {
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(12),
                           border: Border.all(
-                              color: Colors.black.withValues(alpha: 0.07)
+                            color: Colors.black.withValues(alpha: 0.07)
                           ),
                           boxShadow: [
                             BoxShadow(

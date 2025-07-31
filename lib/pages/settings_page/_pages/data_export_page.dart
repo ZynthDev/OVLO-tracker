@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
+import '../../../controllers/microservices/conversion_microservice_controller.dart';
 import '../_components/export_button.dart';
+import '../_components/summary_data.dart';
 
 class DataExportPage extends StatelessWidget {
   const DataExportPage({super.key});
@@ -21,9 +22,9 @@ class DataExportPage extends StatelessWidget {
                 child: Row(
                   children: [
                     InkWell(
-                        borderRadius: BorderRadius.circular(100),
-                        onTap: () => Navigator.pop(context),
-                        child: Icon(Icons.chevron_left, size: 27,)
+                      borderRadius: BorderRadius.circular(100),
+                      onTap: () => Navigator.pop(context),
+                      child: Icon(Icons.chevron_left, size: 27,)
                     ),
                     SizedBox(width: 15,),
                     Text("Data Export", style: TextStyle(
@@ -43,6 +44,7 @@ class DataExportPage extends StatelessWidget {
                       width: double.infinity,
                       child: Text("Download your health data", textAlign: TextAlign.center,)
                     ),
+
                     SizedBox(height: 55,),
                     Text("Export Format", style: TextStyle(
                       fontSize: 16,
@@ -53,21 +55,27 @@ class DataExportPage extends StatelessWidget {
                       color: Colors.red,
                       icon: Icon(Icons.file_download_outlined, color: Colors.white,),
                       text: "Export as PDF Report",
-                      onTap: (){},
+                      onTap: () async {
+                        await ConversionMicroserviceController().downloadPdf();
+                      },
                     ),
                     SizedBox(height: 10,),
                     ExportButton(
                       color: Colors.green,
                       icon: Icon(Icons.file_download_outlined, color: Colors.white,),
                       text: "Export as CSV Data",
-                      onTap: (){},
+                      onTap: () async {
+                        await ConversionMicroserviceController().downloadCsvZip();
+                      },
                     ),
                     SizedBox(height: 10,),
                     ExportButton(
                       color: Colors.blue,
                       icon: Icon(Icons.file_download_outlined, color: Colors.white,),
                       text: "Export as JSON",
-                      onTap: (){},
+                      onTap: () async {
+                        await ConversionMicroserviceController().downloadJson();
+                      },
                     ),
                   ],
                 ),
@@ -107,33 +115,6 @@ class DataExportPage extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class SummaryData extends StatelessWidget {
-  final String title;
-  final String subtitle;
-  final Color color;
-
-  const SummaryData({
-    super.key, required this.title, required this.subtitle, required this.color,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Text(title, style: TextStyle(
-          color: color,
-          fontSize: 24,
-          fontWeight: FontWeight.bold
-        ),),
-        Text(subtitle, style: TextStyle(
-          color: Colors.grey,
-          fontWeight: FontWeight.w500
-        ),),
-      ],
     );
   }
 }

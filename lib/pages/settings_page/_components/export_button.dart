@@ -17,20 +17,20 @@ class ExportButton extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.symmetric(vertical: 10.0),
         decoration: BoxDecoration(
-            color: color,
-            borderRadius: BorderRadius.circular(10)
+          color: color,
+          borderRadius: BorderRadius.circular(10)
         ),
         child: Center(
           child: SizedBox(
             width: 200,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
               spacing: 20,
               children: [
                 icon,
                 Text(text, style: TextStyle(
-                    color: Colors.white
+                  color: Colors.white
                 ),)
               ],
             ),

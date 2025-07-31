@@ -257,26 +257,31 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                             ),
                           ),
-                          const SizedBox(height: 20),
-                          InkWell(
-                            onTap: signInWithApple,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(vertical: 10),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(10),
-                                border: Border.all(color: Colors.black.withValues(alpha: 0.25)),
-                              ),
-                              child: const Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Icon(FontAwesomeIcons.apple, size: 20),
-                                  SizedBox(width: 5),
-                                  Text("Continue with Apple", style: TextStyle(fontWeight: FontWeight.w600)),
-                                ],
-                              ),
+                          if (Platform.isIOS)
+                            Column(
+                              children: [
+                                const SizedBox(height: 20),
+                                InkWell(
+                                  onTap: signInWithApple,
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(vertical: 10),
+                                    decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(10),
+                                      border: Border.all(color: Colors.black.withValues(alpha: 0.25)),
+                                    ),
+                                    child: const Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      children: [
+                                        Icon(FontAwesomeIcons.apple, size: 20),
+                                        SizedBox(width: 5),
+                                        Text("Continue with Apple", style: TextStyle(fontWeight: FontWeight.w600)),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
                             ),
-                          ),
                           const SizedBox(height: 20),
                           const DividerWithText(text: "OR CONTINUE WITH"),
                           const SizedBox(height: 20),

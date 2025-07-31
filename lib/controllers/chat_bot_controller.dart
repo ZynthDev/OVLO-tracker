@@ -14,8 +14,8 @@ Future<String> getChatResponse(String text) async {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': 'Bearer $apiKey',
-          'HTTP-Referer': 'https://your-site.com', // Optional
-          'X-Title': 'My Flutter App', // Optional
+          // 'HTTP-Referer': 'https://your-site.com', // Optional
+          // 'X-Title': 'My Flutter App', // Optional
         },
       ),
       data: {
