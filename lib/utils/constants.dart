@@ -136,7 +136,7 @@ class AppConstants {
       Icon(Symbols.border_color_rounded, color: Colors.black, size: 18,),
       "Data Export",
       "Download your health data",
-        () => navigatorKey.currentState?.push(MaterialPageRoute(builder: (_) => const DataExportPage()))
+        () => navigatorKey.currentState?.push(MaterialPageRoute(builder: (_) => DataExportPage()))
     ),
   ];
 

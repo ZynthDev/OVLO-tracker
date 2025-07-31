@@ -3,7 +3,6 @@ import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../utils/extensions/color.dart';
 import '../../../utils/constants.dart';
-import '../_components/help_button.dart';
 
 class FaqsPage extends StatefulWidget {
   const FaqsPage({super.key});

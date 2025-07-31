@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
+import '../../../utils/components/mixins/full_page_loader_mixin.dart';
 import '../../../controllers/microservices/conversion_microservice_controller.dart';
 import '../_components/export_button.dart';
 import '../_components/summary_data.dart';
 
-class DataExportPage extends StatelessWidget {
-  const DataExportPage({super.key});
+class DataExportPage extends StatelessWidget with FullPageLoaderMixin {
+  DataExportPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,15 +1,11 @@
-import 'dart:convert';
 import 'dart:io';
-import 'dart:math';
 
-import 'package:crypto/crypto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hive/hive.dart';
-import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
 import '../../controllers/auth_controller.dart';
 import '../../utils/components/screen_title.dart';
